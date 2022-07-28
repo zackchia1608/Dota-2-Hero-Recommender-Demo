@@ -1,1 +1,1 @@
-web: gunicorn app:app --logfile
+web: gunicorn heroRecommender:app --logfile
