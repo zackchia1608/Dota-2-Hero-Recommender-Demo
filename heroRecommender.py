@@ -91,8 +91,7 @@ def recommendation():
         heroes = [(hero_dictionary(heroes_json)[hero])
                   for hero in recommendations]
         prob = (round(engine.predict(my_team, their_team) * 100, 2))
-        probability = f"The probability of your team winning is {prob}% with the proposed team composition."
-        return render_template('recommendation.html', prediction_text=f'{heroes}. {probability}')
+        return render_template('recommendation.html', prediction_heroes=f'{heroes}', prediction_wins=f'{prob}')
 
 
 if __name__ == "__main__":
