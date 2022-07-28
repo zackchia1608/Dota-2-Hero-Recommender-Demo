@@ -1,1 +1,1 @@
-web: python heroRecommender.py
+web: gunicorn heroRecommender:app --log-file -
