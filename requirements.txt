@@ -1,4 +1,4 @@
-python==3.9
+python-3.9
 absl-py==1.2.0
 cachetools==5.2.0
 certifi==2022.6.15
@@ -16,10 +16,7 @@ google-auth-oauthlib==0.4.6
 google-pasta==0.2.0
 idna==3.3
 importlib-metadata==4.12.0
-ipykernel @ file:///Users/runner/miniforge3/conda-bld/ipykernel_1657295113967/work
-ipython @ file:///Users/runner/miniforge3/conda-bld/ipython_1653754989223/work
 itsdangerous==2.1.2
-jedi @ file:///Users/runner/miniforge3/conda-bld/jedi_1649067387646/work
 Jinja2==3.1.2
 joblib==1.1.0
 keras==2.9.0
@@ -32,10 +29,8 @@ llvmlite==0.39.0
 Markdown==3.4.1
 MarkupSafe==2.1.1
 matplotlib==3.5.2
-matplotlib-inline @ file:///home/conda/feedstock_root/build_artifacts/matplotlib-inline_1631080358261/work
-nest-asyncio @ file:///home/conda/feedstock_root/build_artifacts/nest-asyncio_1648959695634/work
 numba==0.56.0
-numpy @ file:///Users/runner/miniforge3/conda-bld/numpy_1653325964689/work
+numpy==1.22.4
 oauthlib==3.2.0
 opt-einsum==3.3.0
 pandas==1.4.3
