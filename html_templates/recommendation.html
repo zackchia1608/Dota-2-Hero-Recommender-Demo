@@ -1,8 +1,16 @@
 {% extends "base.html"%} {% block content %}
-<div class="jumbotron">
-  The top recommended heroes are:
-
-  <br />
-  <b>{{ prediction_text }}</b>
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('https://cdn-wp.thesportsrush.com/2020/10/5d741f9b-dota.jpg');
+    height: 250px;
+  ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">The top recommended heroes are:</h1>
+        <h4>{{prediction_text}}</h4>
+      </div>
+    </div>
+  </div>
 </div>
-{% endblock %}
+  {% endblock %}
+</div>

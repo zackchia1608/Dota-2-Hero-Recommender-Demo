@@ -1,35 +1,51 @@
 {% extends "base.html"%} {% block content %}
-<div class="jumbotron">
-  <form method="POST">
-    {# This hidden_tag is a CSRF security feature. #} {{ form.hidden_tag() }}
-    <br />
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('https://cdn-wp.thesportsrush.com/2020/10/5d741f9b-dota.jpg');
+    height: 250px;
+  ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.5);">
+    <div class="d-flex justify-content-center align-items-center h-100">
 
-    <b> DOTA 2 Hero Recommender</b> <br />
+    <form method="POST">
+      {# This hidden_tag is a CSRF security feature. #} {{ form.hidden_tag() }}
+      <br />
+        <div class = 'text-white'>
+          <h1 class="display-4">Dota 2 Hero Recommender</h1>
 
-    <br />
-    {{ form.radiant_hero_1.label}} {{form.radiant_hero_1}}
-    <br />
-    {{ form.radiant_hero_2.label}} {{form.radiant_hero_2}}
-    <br />
-    {{ form.radiant_hero_3.label}} {{form.radiant_hero_3}}
-    <br />
-    {{ form.radiant_hero_4.label}} {{form.radiant_hero_4}}
-    <br />
-    {{ form.radiant_hero_5.label}} {{form.radiant_hero_5}}
-    <br />
-    <br />
-    <br />
-    {{ form.dire_hero_1.label}} {{form.dire_hero_1}}
-    <br />
-    {{ form.dire_hero_2.label}} {{form.dire_hero_2}}
-    <br />
-    {{ form.dire_hero_3.label}} {{form.dire_hero_3}}
-    <br />
-    {{ form.dire_hero_4.label}} {{form.dire_hero_4}}
-    <br />
-    {{ form.dire_hero_5.label}} {{form.dire_hero_5}}
-    <br />
-    {{ form.submit() }}
-  </form>
+          Instructions:<br>
+          1. Fill in your team and enemy team's current composition.<br>
+          2. Click 'Recommend' to find out the optimal hero to choose and the estimated winrate.<br><br>
+          
+
+      <br />
+      {{ form.radiant_hero_1.label}} {{form.radiant_hero_1}}
+      <br />
+      {{ form.radiant_hero_2.label}} {{form.radiant_hero_2}}
+      <br />
+      {{ form.radiant_hero_3.label}} {{form.radiant_hero_3}}
+      <br />
+      {{ form.radiant_hero_4.label}} {{form.radiant_hero_4}}
+      <br />
+      {{ form.radiant_hero_5.label}} {{form.radiant_hero_5}}
+      <br />
+      <br />
+      <br />
+      {{ form.dire_hero_1.label}} {{form.dire_hero_1}}
+      <br />
+      {{ form.dire_hero_2.label}} {{form.dire_hero_2}}
+      <br />
+      {{ form.dire_hero_3.label}} {{form.dire_hero_3}}
+      <br />
+      {{ form.dire_hero_4.label}} {{form.dire_hero_4}}
+      <br />
+      {{ form.dire_hero_5.label}} {{form.dire_hero_5}}
+      <br>
+      <br>
+    </div>
+      {{ form.submit() }}
+      <br>
+      <br>
+    </form>
+  </p>
 </div>
 {% endblock %}

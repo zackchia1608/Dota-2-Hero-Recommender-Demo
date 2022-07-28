@@ -18,24 +18,24 @@ app.config['SECRET_KEY'] = 'mysecretkey'
 class HeroForm(FlaskForm):
 
     radiant_hero_1 = SelectField(
-        u'First Radiant Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+        u'Your First Hero:', choices=choice(heroes_json), validators=[DataRequired()])
     radiant_hero_2 = SelectField(
-        u'Second Radiant Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+        u'Your Second Hero:', choices=choice(heroes_json), validators=[DataRequired()])
     radiant_hero_3 = SelectField(
-        u'Third Radiant Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+        u'Your Third Hero:', choices=choice(heroes_json), validators=[DataRequired()])
     radiant_hero_4 = SelectField(
-        u'Fourth Radiant Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+        u'Your Fourth Hero:', choices=choice(heroes_json), validators=[DataRequired()])
     radiant_hero_5 = SelectField(
-        u'Fifth Radiant Hero:', choices=choice(heroes_json), validators=[DataRequired()])
-    dire_hero_1 = SelectField(u'First Dire Hero:',
+        u'Your Fifth Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+    dire_hero_1 = SelectField(u'Enemy First Hero:',
                               choices=choice(heroes_json), validators=[DataRequired()])
     dire_hero_2 = SelectField(
-        u'Second Dire Hero:', choices=choice(heroes_json), validators=[DataRequired()])
-    dire_hero_3 = SelectField(u'Third Dire Hero:',
+        u'Enemy Second Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+    dire_hero_3 = SelectField(u'Enemy Third Hero:',
                               choices=choice(heroes_json), validators=[DataRequired()])
     dire_hero_4 = SelectField(
-        u'Fourth Dire Hero:', choices=choice(heroes_json), validators=[DataRequired()])
-    dire_hero_5 = SelectField(u'Fifth Dire Hero:',
+        u'Enemy Fourth Hero:', choices=choice(heroes_json), validators=[DataRequired()])
+    dire_hero_5 = SelectField(u'Enemy Fifth Hero:',
                               choices=choice(heroes_json), validators=[DataRequired()])
     submit = SubmitField('Recommend')
 
